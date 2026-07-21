@@ -1,0 +1,214 @@
+:root {
+    --blood-primary: #7a0f1c;
+    --blood-primary-dark: #4b0a11;
+    --blood-accent: #e6b566;
+    --blood-surface: #f6f1ea;
+    --blood-card: #ffffff;
+    --blood-text: #1d2433;
+    --blood-muted: #6c757d;
+    --blood-border: #eadfd5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(122, 15, 28, 0.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(230, 181, 102, 0.11), transparent 32%),
+        linear-gradient(180deg, #fbf8f5 0%, #f4efe8 100%);
+    color: var(--blood-text);
+}
+
+.hero-shell {
+    min-height: 100vh;
+}
+
+.hero-card,
+.auth-card,
+.surface-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(122, 15, 28, 0.09);
+    box-shadow: 0 18px 40px rgba(53, 17, 19, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, var(--blood-primary-dark), var(--blood-primary));
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: auto -10% -40% auto;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: rgba(230, 181, 102, 0.18);
+}
+
+.app-shell {
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--blood-primary-dark), #2f0910);
+    color: #fff;
+    padding: 1.25rem;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-brand {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--blood-accent), #fff4dc);
+    color: var(--blood-primary-dark);
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+}
+
+.donor-mark {
+    background: linear-gradient(135deg, #c85f74, #ffe0e6);
+}
+
+.patient-mark {
+    background: linear-gradient(135deg, #6aa5c7, #d3eefc);
+}
+
+.brand-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.sidebar-link {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    transition: 0.2s ease;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: rgba(230, 181, 102, 0.18);
+    color: #fff;
+    transform: translateX(4px);
+}
+
+.sidebar-link-danger {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffd6d6;
+}
+
+.content-wrap {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.topbar {
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(122, 15, 28, 0.08);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 14px 30px rgba(53, 17, 19, 0.06);
+}
+
+.stat-card {
+    border: 1px solid rgba(122, 15, 28, 0.08);
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #fff, #fff8f2);
+    box-shadow: 0 10px 24px rgba(53, 17, 19, 0.05);
+}
+
+.stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: rgba(122, 15, 28, 0.1);
+    color: var(--blood-primary);
+    font-weight: 700;
+}
+
+.surface-card {
+    border-radius: 1rem;
+}
+
+.table thead th {
+    background: #f8f2eb;
+    color: var(--blood-primary-dark);
+    border-bottom: none;
+}
+
+.status-badge {
+    padding: 0.42rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #8a6d00;
+}
+
+.status-approved,
+.status-accepted {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.status-unread {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.page-hero {
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, var(--blood-primary-dark), var(--blood-primary));
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+    }
+    .app-shell {
+        flex-direction: column;
+    }
+}

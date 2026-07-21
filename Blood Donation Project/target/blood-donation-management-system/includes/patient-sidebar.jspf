@@ -1,0 +1,15 @@
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <div class="brand-mark patient-mark">P</div>
+        <div>
+            <div class="brand-title">Blood Bank</div>
+            <small>Patient Portal</small>
+        </div>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="${pageContext.request.contextPath}/patient-dashboard" class="sidebar-link">Dashboard</a>
+        <a href="${pageContext.request.contextPath}/create-blood-request" class="sidebar-link">Create Request</a>
+        <a href="${pageContext.request.contextPath}/request-status" class="sidebar-link">Request Status</a>
+        <a href="${pageContext.request.contextPath}/logout" class="sidebar-link sidebar-link-danger">Logout</a>
+    </nav>
+</aside>

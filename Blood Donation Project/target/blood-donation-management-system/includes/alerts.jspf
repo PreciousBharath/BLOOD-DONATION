@@ -1,0 +1,24 @@
+<c:choose>
+    <c:when test="${not empty param.success or not empty requestScope.success or not empty sessionScope.success}">
+        <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+            <c:choose>
+                <c:when test="${not empty param.success}"><c:out value="${param.success}"/></c:when>
+                <c:when test="${not empty requestScope.success}"><c:out value="${requestScope.success}"/></c:when>
+                <c:otherwise><c:out value="${sessionScope.success}"/></c:otherwise>
+            </c:choose>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </c:when>
+</c:choose>
+<c:choose>
+    <c:when test="${not empty param.error or not empty requestScope.error or not empty sessionScope.error}">
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+            <c:choose>
+                <c:when test="${not empty param.error}"><c:out value="${param.error}"/></c:when>
+                <c:when test="${not empty requestScope.error}"><c:out value="${requestScope.error}"/></c:when>
+                <c:otherwise><c:out value="${sessionScope.error}"/></c:otherwise>
+            </c:choose>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </c:when>
+</c:choose>

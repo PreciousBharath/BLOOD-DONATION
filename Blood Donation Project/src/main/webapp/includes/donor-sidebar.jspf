@@ -1,0 +1,16 @@
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <div class="brand-mark donor-mark">D</div>
+        <div>
+            <div class="brand-title">Blood Bank</div>
+            <small>Donor Portal</small>
+        </div>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="${pageContext.request.contextPath}/donor-dashboard" class="sidebar-link">Dashboard</a>
+        <a href="${pageContext.request.contextPath}/donor-profile" class="sidebar-link">Profile</a>
+        <a href="${pageContext.request.contextPath}/donor-notifications" class="sidebar-link">Notifications</a>
+        <a href="${pageContext.request.contextPath}/donation-history" class="sidebar-link">Donation History</a>
+        <a href="${pageContext.request.contextPath}/logout" class="sidebar-link sidebar-link-danger">Logout</a>
+    </nav>
+</aside>

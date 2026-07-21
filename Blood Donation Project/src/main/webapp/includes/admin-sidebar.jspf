@@ -1,0 +1,17 @@
+<aside class="sidebar">
+    <div class="sidebar-brand">
+        <div class="brand-mark">B</div>
+        <div>
+            <div class="brand-title">Blood Bank</div>
+            <small>Admin Console</small>
+        </div>
+    </div>
+    <nav class="sidebar-nav">
+        <a href="${pageContext.request.contextPath}/admin-dashboard" class="sidebar-link">Dashboard</a>
+        <a href="${pageContext.request.contextPath}/manage-donors" class="sidebar-link">Manage Donors</a>
+        <a href="${pageContext.request.contextPath}/manage-patients" class="sidebar-link">Manage Patients</a>
+        <a href="${pageContext.request.contextPath}/manage-requests" class="sidebar-link">Manage Requests</a>
+        <a href="${pageContext.request.contextPath}/reports" class="sidebar-link">Reports</a>
+        <a href="${pageContext.request.contextPath}/logout" class="sidebar-link sidebar-link-danger">Logout</a>
+    </nav>
+</aside>
