@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=800&size=40&duration=3500&pause=1500&color=ef473a&center=true&vCenter=true&width=900&height=70&lines=%F0%9F%A9%B8%20Blood%20Donation%20System" alt="Blood Donation System"/>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=800&size=32&duration=3500&pause=1500&color=ef473a&center=true&vCenter=true&width=900&height=70&lines=%F0%9F%A9%B8%20Blood%20Donation%20System" alt="Blood Donation System"/>
 
 <b><i>Connecting donors, patients & admins — Java Web App</i></b>
 
